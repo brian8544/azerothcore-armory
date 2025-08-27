@@ -214,7 +214,7 @@
 			$totalRow.prependTo($("#progress-bars")); // Move the total bar to the top
 		}
 
-		$.getJSON(`{{websiteRoot}}/character/{{realm}}/{{guid}}/achievements/data`, (data) => {
+		$.getJSON(`{{websiteRoot}}/character/{{{realm}}}/{{guid}}/achievements/data`, (data) => {
 			achievementsData = data;
 
 			const $summaryLink = $("<a>")
